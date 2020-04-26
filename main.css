@@ -1,0 +1,736 @@
+@import url('https://fonts.googleapis.com/css?family=Chakra+Petch:400,700|Oxanium:400,700&display=swap');
+/*******************************************************************************************************
+**************************************Colors***************************************************************/
+
+html {
+	--color-lightblue: #1384C0;
+    --color-blue: #02456F;
+    --color-midnightblue: #020F22;
+    --color-darkblue: #04324E;
+    --color-lightgrey: #ddd;
+    --color-yellow: #D79821;
+    --color-black: #000000;
+    --font-primary: "Chakra Petch", Arial, sans-serif;
+    --font-secondary: "Oxanium", Arial, serif;
+	--ratio: 1.2;
+	--size-one: calc( 1rem * var(--ratio) );
+	--size-two: calc( var(--size-one) * var(--ratio) );
+	--size-three: calc( var(--size-two) * var(--ratio) );
+	--size-four: calc(var(--size-three) * var(--ratio) );
+	--size-five: calc( var(--size-four) * var(--ratio) );
+	--size-six: calc(var(--size-five) * var(--ratio) );
+    
+}
+    
+
+
+/*******************************************************************************************************
+**************************************Typography***************************************************************/
+html {
+	background-color: #000;
+	color: var(--color-lightblue);
+	font-family: var(--font-primary);
+
+}
+
+body {
+
+	font-size: 1.35rem;
+	line-height: 1.4;
+}
+
+a {
+
+   	color: var(--color-yellow);
+   	font-size: 1.75rem;
+	font-weight: bold;
+	margin-right: 1.5rem;
+	padding: .5rem 1rem;
+	list-style: none;
+	text-decoration: none;
+
+}
+
+a:visited {
+	color: var(--color-lightblue);
+}
+
+
+a:hover {
+
+	color: var(--color-yellow);
+}
+
+a:focus {
+
+    color: var(--color-blue);
+    text-transform: uppercase;
+}
+
+a:active {
+
+	color: var(--color-blue);
+	text-decoration: overline;
+}
+
+
+
+h1,h2,h3,h4,h5,h6 {
+    color: var(--color-lightblue);
+	font-family: var(--font-secondary);
+}
+
+h1 {
+   font-size: var(--size-six);
+   line-height: 1.3;
+}
+
+h2 {
+   font-size: var(--size-five);
+   color: var(--color-yellow);
+}
+
+h3 {
+   font-size: var(--size-four);
+   color: var(--color-blue);
+}
+
+h4 {
+   font-size: var(--size-three);
+   text-decoration: underline;
+}
+
+h5 {
+   color: var(--color-lightgrey);
+   font-size: var(--size-two);
+}
+
+h6 {
+   color: var(--color-yellow);
+   font-size: var(--size-one);
+}
+
+.body-text-style-two {
+	font-size: var(--size-five);
+	line-height: 1.75;
+}
+
+.body-text-style-three {
+	font-size: var(--size-six);
+	color: var(--color-yellow);
+}
+
+.body-text-style-four {
+	max-width: 35rem;
+	margin: auto;
+}
+
+
+@media (min-width:700px) {
+
+	html {
+       font-size: 1.15rem;
+       line-height: 1.25;
+	}
+}
+
+@media (min-width:1100px) {
+
+	html {
+		font-size: 1.20rem;
+	}
+}
+
+blockquote {
+	font-weight: bold;
+	max-width: 45%;
+}
+
+cite {
+	color: var(--color-yellow);
+}
+
+main ul {
+	list-style: square;
+}
+
+main ul ul {
+	list-style: circle;
+}
+ main ol {
+ 	list-style: lower-latin;
+ }
+
+ main ol ol {
+ 	list-style: lower-roman;
+ }
+/*******************************************************************************************************
+**************************************Header Component***************************************************************/
+header {
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: var(--color-darkblue);
+	display: flex;
+}
+
+
+
+ .nav-primary {
+	background-color: var(--color-midnightblue);
+
+}
+
+.nav-primary ul {
+	margin:0;
+    padding: .5rem 0;
+}
+
+.nav-primary li {
+	border-bottom: 1px solid var(--color-blue);
+	display: block;
+	margin-top: .5rem;
+}
+
+@media ( min-width: 700px) {
+    .nav-primary {
+    	background-color: var(--color-darkblue)
+    }
+
+	.nav-primary li {
+		border-bottom: none;
+		display: inline-block;
+	}
+
+	.nav-primary {
+		margin: auto;
+	}
+
+	.logo {
+		margin: auto;
+	}
+}
+
+
+
+.logo {
+    font-size: var(--size-one);
+    font-weight: bold;
+    color: var(--color-lightgrey);
+    letter-spacing: .5rem;
+}
+
+.hero-block {
+	align-items: center;
+	color: var(--color-yellow);
+	background-image: url(images/hero.jpg);
+	display: flex;
+	flex-direction: column;
+}
+/*******************************************************************************************************
+**************************************Footer Component***************************************************************/
+
+footer {
+	background-color: var(--color-darkblue);
+	color: var(--color-midnightblue);
+	font-weight: bold;
+	padding: 2rem 2rem;
+}
+
+footer p {
+	color: var(--color-black);
+}
+
+footer a {
+	background-color: var(--color-white);
+	color: var(--color-blue);
+}
+
+footer a:visited {
+	color: var(--color-yellow);
+}
+
+footer li {
+	display: block;
+	list-style: none;
+}
+
+@media (min-width: 700px) {
+
+	footer li{
+		display: inline;
+		font-weight: normal;
+	}
+}
+
+
+/*******************************************************************************************************
+**************************************Main Component***************************************************************/
+
+main {
+	max-width: 45rem;
+	padding: 2rem 5rem;
+}
+
+.colorpalette {
+	background-color: var(--color-lightgrey);
+	margin: auto;
+	padding: 1rem 1rem;
+}
+
+.primary-nav img {
+	display: block;
+	margin: 1rem 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+/*******************************************************************************************************
+**************************************link buttons***************************************************************/
+
+.hero-button {
+
+	background-color: var(--color-darkblue);
+    border: .25rem solid var(--color-lightblue);
+    color: var(--color-yellow);
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+}
+
+.hero-button:visited {
+	color: var(--color-midnightblue);
+}
+
+.hero-button:hover, .hero-button:focus {
+	background-color: var(--color-yellow);
+	box-shadow: .5rem .25rem .7rem rgba( 0, 0, 0, .3 );
+	outline: none;
+}
+
+.link-button:active {
+	background-color: var(--color-yellow);
+}
+
+.normal-button {
+	background-color: var(--color-black);
+    border: .15rem solid var(--color-lightblue);
+    color: var(--color-yellow);
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+}
+
+.normal-button:visited {
+	color: var(--color-yellow);
+}
+
+.normal-button:hover, .normal-button:focus {
+	background-color: var(--color-blue);
+}
+
+.normal-button:active {
+	background-color: var(--color-midnightblue);
+}
+
+.tertiary-button {
+    text-decoration: underline;
+
+}
+
+.tertiary-button:visited {
+	color: var(--color-midnightblue);
+}
+
+.tertiary-button:hover, .tertiary-button:focus {
+	color: var(--color-yellow);
+}
+
+.tertiary-button:active {
+	background-color: var(--color-lightgrey);
+}
+
+
+
+/*******************************************************************************************************
+**************************************accordians***************************************************************/
+
+.accordian-one {
+    margin-bottom: 1.5rem;
+    color: var(--color-yellow);
+}
+
+.summary-one {
+    background-color: var(--color-midnightblue);
+    padding: .5rem;
+}
+
+.accordian-two {
+    margin-bottom: 1.5rem;
+    color: var(--color-blue);
+}
+
+.summary-two {
+    background-color: var(--color-yellow);
+    padding: .5rem;
+}
+
+.accordian-three {
+    margin-bottom: 1.5rem;
+    color: var(--color-yellow);
+}
+
+.summary-three {
+    background-color: var(--color-blue);
+    padding: .5rem;
+}
+
+summary:focus {
+    outline: none;
+}
+
+summary:focus span {
+    color: var(--color-yellow);
+}
+
+.summary-two:focus span {
+
+	color:var(--color-midnightblue);
+}
+/*******************************************************************************************************
+**************************************details&summary***************************************************************/
+details div {
+    padding: 1.5rem;
+}
+
+details[open] {
+    border-bottom: 1px solid var(--color-lightgrey);
+}
+
+dialog {
+	background-color: var(--color-blue);
+	border-radius: 1.25rem;
+	color: var(--color-yellow);
+}
+
+dialog[open] {
+	background-color: var(--color-midnightblue);
+}
+
+dialog::backdrop {
+	animation: slide-in-down-grow 3s ease-out;
+    background-color: var(--color-midnightblue);
+}
+/*******************************************************************************************************
+**************************************forms***************************************************************/
+.open-modal {
+	color:var(--color-yellow);
+}
+
+label, input, select, textarea {
+	display: block;
+}
+	
+
+label, [type="submit"] {
+	margin-top: 2rem;
+}
+	
+	
+[type="text"], [type="email"], [type="password"], textarea, select {
+	padding: .5rem;
+	max-width: 20rem;
+	width: 100%;
+}
+
+textarea {
+	min-height: 5rem;
+}
+
+
+input:focus, textarea:focus, select:focus {
+	background-color: var(--color-lightgrey);
+	outline: none;
+}
+
+[type="submit"], button {
+	background-color: var(--color-black);
+	border: .15rem solid var(--color-lightblue);
+	border-radius: .5rem;
+	color: var(--color-yellow);
+	font-size: 1.2rem;
+	font-weight: bold;
+    padding: .5rem 1rem;
+}
+
+[type="submit"]:hover, [type="submit"]:focus, button:hover, button:focus {
+	background-color: var(--color-blue);
+	outline: none;
+}
+
+[type="submit"]:active, button:active  {
+	background-color: var(--color-midnightblue)
+}
+
+.error {
+	border-color: var(--color-lightblue);
+}
+
+.helper-text {
+	font-size: 1.2rem;
+}
+
+/***************************************Hero Block***********************************************************
+************************************************************************************************************
+*************************************************************************************************************/
+
+.hero-block {
+	display: flex;
+	flex-direction: column;
+	min-height: 70vh;
+	justify-content: center;
+ }
+
+ .hero-link-button {
+
+	background-color: var(--color-black);
+	border: .2rem solid var(--color-white);
+	border-radius: .5rem;
+	color: var(--color-white);
+	font-size: var(--size-two);
+	padding: .2rem 1rem;
+}	
+
+.hero-block h1 {
+ 	margin: 0;
+ }   
+
+
+@media (min-width: 1200px) {
+
+	.hero-block {
+      font-size: var(--size-four)  
+
+	}     
+
+	.hero-block h1 {
+		font-size: var(--size-six);
+	}
+
+	.hero-link-button {
+		padding: 1rem 1rem;
+	}
+}
+
+ 
+
+/*******************************************************************************************************
+**************************************notifications***************************************************************/
+
+.error {
+	background-color: var(--color-lightgrey);
+	border: .1rem solid red;
+	color: var(--color-black);
+	max-width: 35rem;
+}
+
+.error h3 {
+	color: red;
+}
+
+
+.warning {
+	background-color: var(--color-lightgrey);
+	border: .1rem solid var(--color-yellow);
+	color: var(--color-black);
+	max-width: 35rem;
+}
+
+.warning h3 {
+	color: var(--color-yellow);
+}
+
+.warning figure {
+	align-items: center;
+	justify-content: space-around;
+	display: flex;
+}
+
+.neutral {
+	background-color: var(--color-lightgrey);
+	border: .1rem solid var(--color-darkblue);
+	color: var(--color-black);
+	max-width: 35rem;
+}
+
+.neutral h3 {
+	color: var(--color-darkblue);
+}
+
+.neutral figure {
+	align-items: center;
+	justify-content: space-around;
+	display: flex;
+}
+
+.success {
+	background-color: var(--color-lightgrey);
+	border: .1rem solid green;
+	color: var(--color-black);	
+	max-width: 35rem;
+}
+
+.success h3 {
+    color: green;
+}
+
+.success figure {
+	align-items: center;
+	justify-content: space-around;
+	display: flex;
+}
+
+/*******************************************************************************************************
+**************************************information cards***************************************************************/
+
+.article-card {
+	background-color: var(--color-midnightblue);
+	max-width: 20rem;
+	padding: .5rem .5rem;
+}
+
+.article-card h4 {
+	color: var(--color-yellow);
+	margin: 0 0;
+	text-decoration: none;
+}
+
+.article-card a {
+	color: var(--color-lightgrey);
+	font-size: 1.1rem;
+	padding-left: 0;
+    text-decoration: underline;
+    
+}
+
+
+
+.call-to-action-card {
+	background-color: var(--color-midnightblue);
+	max-width: 20rem;
+	padding-bottom: 2rem;
+	text-align: center;
+}
+
+.call-to-action-card h5 {
+	background-color: var(--color-yellow);
+	margin-top: 0;
+	
+}
+
+.call-to-action-card img {
+	max-width: 100%;
+}
+
+.call-to-action-card a {
+	background-color: var(--color-lightgrey);
+	border: .2rem solid var(--color-lightblue);
+	border-radius: .3rem;
+	display: inline-block;
+	font-size: 1.3rem;
+	margin: auto;
+	padding: .3rem .5rem;
+
+}
+
+.person-card {
+	background-color: var(--color-darkblue);
+	max-width: 20rem;
+	padding-bottom: .5rem;
+	text-align: center;
+}
+
+.person-card img {
+	border-radius: 50%;
+	display: block;
+	margin: auto;
+	margin-bottom: 1rem;
+	max-width: 100%;
+}
+
+.person-card h5 {
+	margin: 0;
+	text-decoration: underline;
+}
+
+.person-card h6 {
+	margin: 0;
+
+}
+
+.person-card p {
+	border-bottom: .1rem dotted var(--color-midnightblue);
+	color: var(--color-yellow);
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin: .5rem;
+
+}
+
+.person-card a {
+	font-size: 1rem;
+}
+
+/*******************************************************************************************************
+**************************************card grid***************************************************************/
+
+.article-cards {
+	background-color: var(--color-darkblue);
+	display: grid;
+	font-size: 1rem;
+	grid-gap: 1.5rem;
+	padding: 1rem 1rem;
+}
+
+.article-cards p {
+		margin: 0;
+}
+
+@media (min-width: 800px) {
+
+	.article-cards {
+		grid-template-columns: 1fr 1fr;
+		font-size: 1rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	.article-cards {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+
+
+/*******************************************************************************************************
+**************************************card callouts***************************************************************/
+
+.card-callouts {
+	border: .2rem dotted var(--color-yellow);
+	display: grid;
+	grid-row-gap: 1rem;
+	max-width: 20rem;
+	padding: 1rem 1rem;
+}
+
+@media (min-width: 800px) {
+    .call-to-action-card {
+    	max-width: 15rem;
+    }
+
+	.card-callouts {
+		border: none;
+		grid-gap: 1rem;
+		grid-template-columns: 1fr 1fr 1fr;
+		max-width: 60rem;
+	}
+}

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Components</title>
+
+	<link rel="stylesheet" type="text/css" href="main.css">
+
+</head>
+
+<body>
+
+	<header>
+		
+		<a href="" class="logo">Visions Design System</a>
+
+		<nav class="nav-primary">
+
+			<ul>
+
+				<li><a href="index.html">Home</a></li>
+				<li><a href="style.html">Style</a></li>
+				<li><a href="components.html">Components</a></li>
+				<li><a href="layouts.html">Layout</a></li>
+
+			</ul>	
+
+		</nav>	
+
+	</header>	
+
+	<main>
+
+		<h1>Visions Design System Components</h1>
+
+		<section>
+
+			<h2>Link Buttons</h2>
+
+			<h3>Hero Button</h3>
+
+			<a href="" class="hero-button">Hero</a>
+
+			<h3>Normal Button</h3>
+
+			<a href="" class="normal-button">Normal</a>
+
+			<h3>Tertiarty Button</h3>
+
+			<a href="" class="tertiary-button">Tertiary</a>
+
+	   </section>
+
+	   <section>
+	   	
+         <h2>Accordians</h2>
+
+         <details class="accordian-one">
+
+           <summary class="summary-one"><span>Example One</span></summary>
+    
+           <div>
+    
+             	<h3>Example One</h3>
+
+            	
+    		</div>
+    
+		</details>
+
+
+        <details class="accordian-two">
+
+           <summary class="summary-two"><span>Example Two</span></summary>
+    
+           <div>
+    
+             	<h3>Example Two</h3>
+
+         
+
+    		</div>
+    
+		</details>
+
+        
+        <details class="accordian-three">
+
+           <summary class="summary-three"><span>Example Three</span></summary>
+    
+           <div>
+    
+             	<h3>Example Three</h3>
+
+    		</div>
+    
+		</details>
+
+        <h2>Modal Dialog</h2>
+
+        <figure>
+	
+	       <button id="open-modal" type="button">Open Modal</button>
+    
+	       <dialog>
+	        
+	           <h3>I'm a dialog</h3>
+	        
+	           <p>I'm a paragraph.</p>
+	        
+	       </dialog>
+
+        </figure>
+
+
+
+        <h2>Form Inputs</h2>
+        
+         <form action="subfolder/file.js">
+
+	      <figure>
+            <h3>Label Form</h3>
+		    <label for="name">Your Name</label>
+		    <input type="text" id="name" name="name" disabled value="Willie Nelson">
+
+	        <label for="email">Your Email Address</label>
+	        <input type="email" id="email" name="email" required>
+
+	        <label for="password">Your Password</label>
+	        <input type="password" id="password" name="password" class="error">
+	      </figure>   
+
+	      <figure>
+
+	        <h3>Textarea Form</h3> 
+
+	        <label for="message">Message</label>
+	        <p class="textarea">Please Leave Us a Message.</p>
+	        <textarea id="message" name="message" placeholder="Enter your massage here"></textarea>
+
+		    <label for="favorite-color">Your Favorite Color</label>
+		    <select id="favorite-color" name="color">
+			<option disabled selected hidden>Choose</option>
+			<option>Blue</option>
+			<option>Green</option>
+			<option>Purple</option>
+			<option>Red</option>
+			<option>Yellow</option>
+			<option>Pink</option>
+	        </select>
+          </figure>
+
+          <figure>
+	        <h3>Submit/Button</h3>
+	        <input type="submit" value="Submit The Form">
+
+	      </figure>    
+        </form>
+
+         <h2>Navigation</h2>
+
+         <h3>Primary</h3>
+         <figure class="primary-nav">
+           <img src="images/primary-first.png" alt="primary-first">
+           <img src="images/primary-second.png" alt="primary-second">
+         </figure>
+
+         <h3>Secondary</h3>
+
+         <figure>
+         	<img src="images/secondary-first.png" alt="secondary-first">
+         	<img src="images/secondary-second.png" alt="secondary-second">
+        </figure> 	
+
+        
+
+
+	  </section>
+
+	  <section>
+	  	<h2>Notifications</h2>
+
+
+        <h3>Error</h3>   
+        
+        <div class="error">
+
+          <figure>	
+             <img src="images/error.svg" alt="error">	
+	  	     <h3>Error</h3>
+	  	     <p>You put the goggles on the wrong way!</p>  
+	  	</div>   
+
+	  	<h3>Warning</h3>
+
+        
+        <div class="warning">
+
+	  	  <figure>
+	  	  	<img src="images/warning.svg" alt="warning">
+            <h3>Warning</h3>
+            <p>You are starting to get bored.</p>
+
+	  	  </figure>	
+        </div>
+
+
+        <h3>Neutral</h3>
+        <div class="neutral">
+
+	  	  <figure>
+	  	  	<img src="images/thumbs-up.svg" alt="thumbs-up">
+	  	  	<h3>Info</h3>
+	  	  	<p>Your goggles are ready.</p>
+	  	  </figure>	
+	  	</div>
+        
+        <h3>Success</h3>
+         
+        <div class="success">
+          <figure>	
+
+             <img src="images/checkmark.svg" alt="checkmark">
+	  	     <h3>Wow!</h3>
+	  	     <p>This virtual sky is amazing!</p>
+
+	  	  </figure>  
+	  	</div>  
+        
+
+	  </section>
+
+	  <section>
+
+	  	 <h2>Hero Block</h2>
+
+	  	 <a href="hero.html"><img src="images/hero-example.PNG" alt="hero-example"></a>
+
+	  </section> 	
+
+	  <section>
+
+	  	<h2>Information cards</h2>
+
+	  	<h3>Article Card</h3>
+
+	  		<div class="article-card">
+             
+               <img src="images/card-one.jpg" alt="card-one">
+               <h4>Virtual Reality</h4>
+               <p>The new way to escape your world and enter a new one!</p>
+               <a href="">read more</a>
+
+            </div> 	
+
+	  	<h3>Call to Action Card</h3>
+
+	  		<div class="call-to-action-card">
+	  		   <img src="images/card-two.jpg" alt="card-two">
+               <h5>Enter a New World!</h5>
+               <a href="">Buy Now</a>
+            </div>
+		
+
+	    <h3>Person/Profile Card</h3>
+
+          <div class="person-card">
+	    	<img src="images/card-three.jpg" alt="card-three">
+	    	<h5>Jill Jones</h5>
+	    	<p>Austin, Tx</p>
+	    	<a href="">email: Jilljones_90@gmail.com</a>
+	    	<a href="">cell: 512-343-0405</a>
+
+	 </section>
+
+	 <section>
+	 	<section>
+			<h2>Card Callouts</h2>
+			<a href="card-callouts.html"><img src="images/callout-grid.PNG" class="card-callouts">
+		</section>	
+
+	 </section>
+
+
+
+	</main>
+	
+
+	<footer>
+		
+		<p>created by Aryn Harris</p>
+        <p>UX student at Austin Community College. Has done numerous projects and overall exceptional 
+        works of art</p>
+
+        <nav>
+
+        	<ul>
+        		
+        		<li><a href="">Google</a></li>
+        		<li><a href="">Linkin</a></li>
+        		<li><a href="">Dribbble</a></li>
+
+        	</ul>
+
+        </nav>	
+
+        <p> Copyright 2020</p>
+
+	</footer>
+</body>
+
+</html>
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+
+const modal = document.querySelector('dialog');
+const open = document.getElementById('open-modal');
+
+open.addEventListener('click', () => {
+modal.showModal();
+});
+
+modal.addEventListener('click', event => {
+if (event.target === modal) {
+modal.close('cancelled');
+}
+});
+
+});
+</script>
+
